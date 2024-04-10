@@ -1,0 +1,63 @@
+User Dashboard
+Write React code to implement the requirements given below in the Codesandbox which is shared with Crio
+Scenario 1: On page load
+Display 4 buttons
+Two list items, Email and Name
+Placeholder Image (Link)
+
+
+Scenario 2: On clicking button with value 1 (similarly 2 or 3)
+Load data from https://reqres.in/api/users/1
+Endpoint https://reqres.in/api/users/<id>
+Display the data
+Show email
+First name and last name combined as Name
+Render image with “avatar” link given
+
+
+Scenario 3: On clicking button 100
+Handle the error response from the API call
+Show an alert bar instead of displaying the data
+
+
+Notes
+Create a component, src/session1-takehome/UserDashboard to store the UI and logic for this Takehome. Export the component and import it in src/App.js.
+API Endpoint - https://reqres.in/api/users/<id> 
+Eg: https://reqres.in/api/users/1
+Ids 1-12 returns data with a 200 status code
+Other values return {} with 404
+You must use axios to make API calls and handle errors (and not Fetch API)
+Use the axios shorthand axios.get() to make the API request
+
+References
+Exports and imports
+How to pass values inside attributes?
+Axios
+Axios GET request syntax (See “GET requests” section)
+Handling errors
+Axios vs  Fetch (Need only check points 1-5)
+Event handling in React
+Styling in React
+Tip
+async-await syntax for JavaScript with arrow functions (or function expressions)
+const add = async function(a) {
+   let b = await fetchData();
+   return a + b;
+};
+
+
+Understand the API response structure and status codes before starting to code
+You can use an extension like JSONView for Chrome/Brave to format the API response on browser
+
+Installing and importing axios in Codesandbox
+Axios needs to be added as the project dependency (installed) for us to be able to use it in the project. Follow the steps below to install axios in Codesandbox
+
+Find the Dependencies section within the File explorer section
+
+Type axios in the search bar and select the first option
+
+  You’ll find axios displayed in the dependencies list
+
+
+Import axios to the appropriate component by adding below import statement
+import axios from "axios";
