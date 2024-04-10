@@ -1,0 +1,63 @@
+Dog Pics
+Write React code to implement the requirements given below ​​in the Codesandbox which is shared with Crio
+Scenario 1: On page load
+
+Display a select dropdown with these values
+Random
+Beagle
+Boxer
+Dalmatian
+Husky
+Random dog image loaded (as Random is selected). On refreshing, it should show another random dog image
+“Next” button 
+Scenario 2: On selecting a breed from the dropdown
+If the selected breed is “Random”, show a random dog image
+For other breeds, show a random dog image of that breed
+
+
+Scenario 3: On clicking “Next” button
+If the selected breed is “Random”, show another random dog image
+For other breeds, show a different random dog image of that breed 
+
+Notes
+Create a component, src/session2-takehome/DogPics to store the UI and logic for this Takehome. Export the component and import it in src/App.js.
+API Endpoints - API Documentation
+Return a random dog image link - https://dog.ceo/api/breeds/image/random 
+Return a random dog image link for a breed - “https://dog.ceo/api/breed/<breed-name>/images/random”
+Eg: https://dog.ceo/api/breed/husky/images/random
+Don’t hardcode a default image link to show on load. Use the appropriate lifecycle method to fetch a random dog image
+You must use axios to make API calls and handle errors (and not Fetch API)
+Use the axios shorthand axios.get() to make the API request
+
+References
+Exports and imports
+Axios
+Axios GET request syntax (See “GET requests” section)
+Handling errors
+Axios vs  Fetch (Need only check points 1-5)
+Dropdowns in React
+Lifecycle methods - 1 - 2
+Styling in React
+Tip
+async-await syntax for JavaScript with arrow functions (or function expressions)
+const add = async function(a) {
+   let b = await fetchData();
+   return a + b;
+};
+
+
+Understand the API response structure and status codes before starting to code
+You can use an extension like JSONView for Chrome/Brave to format the API response on browser
+
+Installing and importing axios in Codesandbox
+Axios needs to be added as the project dependency (installed) for us to be able to use it in the project. Follow the steps below to install axios in Codesandbox
+
+Find the Dependencies section within the File explorer section
+
+Type axios in the search bar and select the first option
+
+  You’ll find axios displayed in the dependencies list
+
+
+Import axios to the appropriate component by adding below import statement
+import axios from "axios";
